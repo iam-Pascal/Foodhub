@@ -1,0 +1,108 @@
+    html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%; //height: 100%;
+            background: url('../images/P2.jpeg') no-repeat center;
+            background-attachment: fixed;
+        }
+
+        .cover {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+}
+
+        .form-container {
+            width: 50%;
+            height: 90%;
+            margin: 26px auto 2px;
+            border: 1px solid #111;
+            position: relative;
+            background: #fff;
+            .form-area {
+                margin: 6px 18px 18px 0 ;
+                text-align: center;
+            }
+            .form {
+                padding: 5px;
+                .form-input {
+                    width: 50%;
+                    padding: 15px;
+                    box-shadow: none;
+                    border-radius: 3px;
+                    outline: none;
+                    border: 1px solid #111;
+                }
+            }
+            .form-group {
+                padding: 5px;
+                width: 100%;
+                display: inline-block;
+                .form-1 {
+                    float: left;
+                    width: 70%;
+                    text-align: center;
+                    .form-input1 {
+                        padding: 15px;
+                        width: 300px;
+                        box-shadow: none;
+                        border-radius: 3px;
+                        outline: none;
+                        border: 1px solid #111;
+                    }
+                }
+                .form-2 {
+                    float: right;
+                    margin-top: 10px;
+                    width: 30%;
+                    .packs {
+                        padding: 5px;
+                        box-shadow: none;
+                        border-radius: 3px;
+                        border: 1px solid #111;
+                    }
+                }
+            }
+            .specify {
+                @extend .form-group;
+                .gender,
+                .pick {
+                    float: left;
+                    width: 50%;
+                    .form-input2 {
+                        padding: 5px;
+                        box-shadow: none;
+                        border-radius: 3px;
+                        outline: none;
+                        border: 1px solid #111;
+                    }
+                }
+            }
+        }
+
+        textarea {
+            padding: 20px;
+            border: 1px solid #111;
+            border-radius: 4px;
+        }
+
+        .sub-mit {
+            margin-top: 5px;
+            padding: 5px;
+            .submit{
+            box-shadow: none;
+            color:#fff;
+            border-radius: 3px;
+            border: 1px solid #111;
+            font-family: sans-serif;
+            background: #111;
+            font-size: 20px;
+            text-align: center;
+                &.active{
+                    display: none;
+                }
+        }
+    }

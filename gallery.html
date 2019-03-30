@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pictures</title>
+    <link rel="stylesheet" href="assets/css/source.css">
+</head>
+<body>
+    <nav class ="nav">
+                <ul>
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Our Services</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Gallery</a></li>
+                </ul>
+          </nav>
+        <section>
+            <div class="inner-content">
+               <div class="land-overlay"></div>
+                <span><strong>3C</strong> <br> <h4>...Eat Wright with Low Cost</h4></span>
+            </div>
+    </section>
+    <!-- the gallery-->
+    <section class="projects">
+        <div class="wrapper">
+         <ul>
+             <li>
+                <img src="assets/images/P1.jpg" alt="" class = 'pix'>
+                <div class = "overlay-wrapper">
+                     <div class = "inner-wrapper">
+                         <a href="">Test Me</a> <br>
+                         <button>Click </button>
+                     </div>
+                 </div> 
+             </li>
+             <li><a href=""><img src="assets/images/P10.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P11.png" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P12.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P9.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P2.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P3.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P4.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P5.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P6.jpeg" alt=""></a></li>
+              <li><a href=""><img src="assets/images/P15.jpeg" alt=""></a></li>
+             <li><a href=""><img src="assets/images/P13.jpeg" alt=""></a></li>
+         </ul>
+        </div>
+    </section>
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+<!--    <script src="assets/js/home.js"></script>-->
+    <script>
+        $(function(){
+        
+           $('.overlay-wrapper').click(function(){
+               let $img = $(this).siblings('img');
+                $img.hide();
+            })
+        })
+    </script>
+ </body>
+</html>

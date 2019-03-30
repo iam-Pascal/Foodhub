@@ -1,0 +1,6 @@
+ @mixin grid($cols, $mgn){
+    float:left;
+    margin-right: $mgn;
+    margin-bottom: $mgn;
+   width: 22%;
+}

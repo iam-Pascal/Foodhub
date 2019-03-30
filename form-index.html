@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>888
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="cover"></div>
+    <div class="form-container">
+        <form action="" name="submit" method="POST" onSubmit="return validate()" class="form-area">
+            <div class="form">
+                <label for="">Name: </label> <br>
+                <input type="text" class="form-input" placeholder="Full Name" name="name" value="" required>
+            </div>
+
+            <br>
+            <div class="form">
+                <label for="">Address: </label> <br>
+                <input type="text" class="form-input" placeholder="your address" name="address" value="" required>
+            </div>
+
+            <br>
+            <div class="form">
+                <label for="">Phone No: </label> <br>
+                <input type="tel" name="usertel" class="form-input">
+            </div>
+
+            <br>
+            <div class="form-group">
+                <div class="form-1">
+                    <label for="">Food Type: </label><br> 
+                    <input type="text" class="form-input1">
+                </div>
+     
+                <div class="form-2">
+                    <Label>Number of food packs: </Label><br>
+                    <input type="number" value="" name="" min="1" max="20" class="packs" >
+                </div>
+            </div>
+
+            <br>
+            <div class="specify">
+            <div class= "gender">
+                <input type="checkbox" name="gender" value="Bike" >female
+                <input type="checkbox" name="gender" value="Bike" > male
+            </div>
+
+            <div class ="pick">
+                <select name="select" id="" class="form-input2">
+                <option value="">Select</option>
+                <option value="pick up">Self pick-up</option>
+                <option value="Delivery">Delivery</option>
+            </select>
+            </div>
+            </div>
+            
+            <br>
+            <textarea name="Add any more infomation" id="" cols="30" rows="10"></textarea>
+
+            <div class="sub-mit">
+                <button type="submit" name="submit" class="submit">Order</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/remove-div.js"></script>
+</body>
+</html>
